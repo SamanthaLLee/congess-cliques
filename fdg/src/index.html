@@ -6,7 +6,6 @@
     </style>
 
     <script src="//unpkg.com/3d-force-graph"></script>
-    <!--<script src="../../dist/3d-force-graph.js"></script>-->
 </head>
 
 <body>
@@ -28,5 +27,8 @@
         const Graph = ForceGraph3D()
             (document.getElementById('3d-graph'))
             .graphData(gData);
+
+        var data = $.csv.toObjects("fdg/public/fb-pages-politician/fb-pages-politician-nodes.csv")
+        console.log(data)
     </script>
 </body>
